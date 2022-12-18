@@ -187,3 +187,14 @@ function hasEnoughPlayers(arrayInstance) {
         return false; // false is also a boolean value. Do not return a string "false"
 }
 console.log(hasEnoughPlayers(team));
+
+
+//loop through an array
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+// the variable `i` is used to step through each element in the array
+for (var i = 0; i < donuts.length; i++) {
+    donuts[i] += " hole";
+    donuts[i] = donuts[i].toUpperCase();
+}
+//donuts array: ["JELLY DONUT HOLE", "CHOCOLATE DONUT HOLE", "GLAZED DONUT HOLE"]
