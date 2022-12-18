@@ -209,3 +209,11 @@ donuts.forEach(function(donut) {
 });
 
 //Prints: JELLY DONUT HOLE CHOCOLATE DONUT HOLE GLAZED DONUT HOLE
+
+//using map to loop and return a new array
+var totals = bills.map(function(bill) {
+  bill *= 1.15;
+  return Number(bill.toFixed(2));
+})
+
+console.log(totals);
