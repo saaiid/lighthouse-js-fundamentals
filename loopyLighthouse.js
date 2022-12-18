@@ -211,9 +211,19 @@ donuts.forEach(function(donut) {
 //Prints: JELLY DONUT HOLE CHOCOLATE DONUT HOLE GLAZED DONUT HOLE
 
 //using map to loop and return a new array
+var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
 var totals = bills.map(function(bill) {
   bill *= 1.15;
   return Number(bill.toFixed(2));
 })
+
+console.log(totals);
+
+//same above code with lesss lines
+var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+
+var totals = bills.map(function(bill) {
+  return +(bill * 1.15).toFixed(2); // The "+" before the method call converts the string back to a number
+});
 
 console.log(totals);
