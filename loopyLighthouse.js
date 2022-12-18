@@ -198,3 +198,14 @@ for (var i = 0; i < donuts.length; i++) {
     donuts[i] = donuts[i].toUpperCase();
 }
 //donuts array: ["JELLY DONUT HOLE", "CHOCOLATE DONUT HOLE", "GLAZED DONUT HOLE"]
+
+//using forEach to koop through an array
+var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+donuts.forEach(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  console.log(donut);
+});
+
+//Prints: JELLY DONUT HOLE CHOCOLATE DONUT HOLE GLAZED DONUT HOLE
